@@ -22,7 +22,7 @@ Please read the [overwolf.games.events](overwolf-games-events) documentation pag
 
 ## Game events status
 
-It's highly recommended to communicate errors and warnings to your app users. Check game event status [here](../status/all) or easily check game events straight from your app [using our API](../topics/howto-check-events-status-from-app).
+It's highly recommended to communicate errors to your app users. Check game event status [here](../status/all) or easily verify event status straight from your app [using our API](../topics/howto-check-events-status-from-app).
 
 ## `kill`
 
@@ -107,12 +107,12 @@ JSON containing:
 key          | Category    | Values                            | Notes                 | Since GEP Ver. |
 ------------ | ------------| --------------------------------- | --------------------- | ------------- |
 game_start_timestamp| game_info   |Date string of the time the game was launched|               |      47.0     |
-game_state   | game_info   |battle/hangar/wot_starting/replay|               |      47.0     |
+game_state   | game_info   |Battle/Hangar/WoT_starting/Replay|               |      47.0     |
 map_name     | game_info   | See [notes](#map_name-note) |               |      86.0     |
 
 #### *map_name* note
 
-Name of the map or loading space the player is currently in
+Name of the map or loading environment the player is currently in.
 
 Data Example:
 
@@ -122,7 +122,7 @@ Data Example:
 
 key          | Category    | Values                            | Notes                 | Since GEP Ver. |
 ------------ | ------------| --------------------------------- | --------------------- | ------------- |
-pseudo_match_id| match_info   |The current session’s ID code.|See [notes](#pseudo_match_id-note)|      47.0     |
+pseudo_match_id| match_info   |The current session’s ID code|See [notes](#pseudo_match_id-note)|      47.0     |
 
 #### *pseudo_match_id* note
 
