@@ -4,12 +4,12 @@ title: overwolf.egs API
 sidebar_label: overwolf.egs
 ---
 
-## EGS Overview
+## End Game Summary Overview (EGS)
 
-The end game summary screen (EGS) provides a summary of information about the last game session – including statistics such as Actions-Per-Minute as well as video highlights of key plays. You can choose to show different and unique EGS information by creating a 'shelf' inside the EGS window. 
+The end game summary screen (EGS) provides a summary of information about the last game session – including statistics such as Actions-Per-Minute as well as video highlights of key plays. You can choose to show different and unique EGS information by creating a personalized 'shelf' inside the EGS window. 
 
 :::important
-This feature should be enabled from Overwolf's server side. Please contact us if you want to use this feature: developers@overwolf.com.
+This feature should be enabled on Overwolf's server side. Please contact us if you want to use this feature: developers@overwolf.com.
 :::
 
 ## Supported games
@@ -99,7 +99,7 @@ If `overwolf.egs.enums.ShelfStatus.Error` is returned, an error message with a R
 
 ## Other notes
 
-There are two events you may listen to:
+There are two events you might need to use:
 
 * `overwolf.egs.onEgsEnablementChanged.addListener(function(result) { result.isEnabled == [true | false] });`
   Will indicate when the EGS is enabled/disabled – you can wait for this event if a call to `overwolf.egs.isEnabled` returns false.
@@ -142,7 +142,7 @@ There are two events you may listen to:
 
 Parameter | Type                       | Description                                                             |
 --------- | ---------------------------| ----------------------------------------------------------------------- |
-callback  | function                   | The result of the request                                               |
+callback  | function                   | Result of the request                                               |
 
 ## requestToDisplay(callback)
 #### Version added: 0.94
@@ -151,7 +151,7 @@ callback  | function                   | The result of the request              
 
 Parameter | Type                       | Description                                                             |
 --------- | ---------------------------| ----------------------------------------------------------------------- |
-callback  | function                   | The result of the request                                               |
+callback  | function                   | Result of the request                                               |
 
 ## setStatus(status, callback)
 #### Version added: 0.94
@@ -166,7 +166,7 @@ callback  | function                                            | Result of the 
 ## setHeight(height, callback)
 #### Version added: 0.103
 
-> Sets the shelf height.
+> Sets shelf height.
 
 #### Notes
 
